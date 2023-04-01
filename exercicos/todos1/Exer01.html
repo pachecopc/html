@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <link rel="shortcut icon" href="favicon perfil.ico" type="image/x-icon">
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <style>
+       * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*style the header*/
+        header {
+            background-color: #16aa4d;
+            padding: 5px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 100px;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;            
+        }
+        nav ul {
+            list-style-type: nome;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 570px;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after {
+           content: "";
+           display: table;
+           clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <a href="index.html">voltar para o inicio</a>
+    <img src="perfil1.jpg" alt="">
+    <h1>Teste de tabela</h1>
+    <h2>CSS Layout Float</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta perspiciatis dolorum sit inventore quas repellendus sunt, ea, pariatur minus corrupti vel fugit dolor tempore, sequi iste iure omnis assumenda.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam id, ratione reiciendis repudiandae fugiat culpa commodi. Exercitationem veniam recusandae modi soluta corrupti autem alias eos dolorem expedita, neque porro labore!</p>
+    <header>
+        <h2>Cidades</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">São Paulo</a></li>
+                <li><a href="#">Curitiba</a></li>
+                <li><a href="#">Rio de Janeiro</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>São Paulo</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ducimus ex, recusandae earum laborum amet eius esse expedita corrupti,</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum odio, placeat quis quod numquam reiciendis amet libero voluptatibus,.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Rodopé</p>
+    </footer>   
+    
+</body>
+</html>
