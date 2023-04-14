@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #89CDA5;
+    --cor2: #5CBE7D;
+    --cor3: #1A5A37;
+}
+
+header{
+    background-color: chartreuse;
+}
+header p{
+    background-color: green;
+    color: white;
+    text-align: center;
+    
+}
+
+body{
+    padding: 1px;
+    margin: 0px;
+    background: var(--cor0);
+}
+nav{
+    font-size: 20px;
+}
