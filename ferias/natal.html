@@ -1,14 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Natal</title>
+    <style>
+                
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+          
+        
+        h1{
+            color: brown;
+        }
+        h2{
+            color: blue;
+        }  
+        h3{
+            font-size: 20px;
+            background-color:#80EDC3;
+            color:blue;
+            width: auto;
+            text-align: center;
+
+        }           
+        .bloco{
+          display: inline-block;
+                    
+          font-size: 20px;
+        }
+          .bloco:hover{
+          background-color: chartreuse;
+          }
+        
+        .btn-fixed.visible{
+          visibility: visible;
+        }
+
+        li{
+          font-size: 20px;                    
+        }
+        
+        
+       </style>          
+        
+    
+</head>
+
 </head>
 <body>
     <p><a href="ferias.html">Volta para Inicio</a></p>
-    <h1>Destinos em Natal</h1>
-    
-</body>
+    <h1>Destinos em Natal</h1>        
+    <ol>    
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <br/>
+</ol>
+<div class="bloco">
+<h3 id =""></h3> 
+<div class="dropdown">
+    <img src="" alt="Cinque Terre" width="100" height="50">    
+    <div class="dropdown-content">
+    <img src="" alt="Cinque Terre" width="300" height="200">    
+    <div class="desc">Picãozinho</div>
+    </div>
+</div>
+    <div class="dropdown">
+    <img src="" alt="Cinque Terre" width="100" height="50">    
+    <div class="dropdown-content">
+    <img src="" alt="Cinque Terre" width="300" height="200">    
+    <div class="desc"></div>
+    </div>
+  </div> 
+  <p></p>
+</div>
+  <hr>
+
+  <div class="bloco">
+  <h3 id=""></h3>
+  <div class="dropdown">
+    <img src="" alt="Cinque Terre" width="100" height="50">
+    <div class="dropdown-content">
+    <img src="" alt="Cinque Terre" width="300" height="200">
+    <div class="desc"></div>
+    </div>
+  </div>
+  <div class="dropdown">
+    <img src="" alt="Cinque Terre" width="100" height="50">
+    <div class="dropdown-content">
+    <img src="" alt="Cinque Terre" width="300" height="200">
+    <div class="desc">Picina Natural do Seixas</div>
+    </div>
+  </div>    
+    <p></p>
+  </div>
+    <hr>
+
+    <div class="bloco">
+  <h3 id=""></h3> 
+    <p> </p>
+    </div>
+    <hr>
+
+    <div class="bloco">
+    <h3 id=""></h3>  
+    <p> </p>
+    </div>
+<hr>
+
+    <div class="bloco">
+    <h3 id=""></h3>  
+    <p></p>
+    </div>
+    <hr>
+
+    <div class="bloco">
+    <h3 id=""></h3>  
+    <p></p>
+    </div>
+    <hr>
+
+    <div class="bloco">
+    <h3 id=""></h3>  
+    <p>  </p>
+    </div>
+    <hr>
+
+    <div class="bloco">
+    <h3 id=""></h3>  
+    <p></p>
+    </div>
+
+    <a class="btn-fixed" href="#top">
+      <span class="material-icons">
+        Voltar ao Topo
+      </span>
+    </a>
+    <script>
+      const botao = document.querySelector(".btn-fixed");
+      window.addEventListener("scroll",function (event) {
+        if (window.scrolly ==0){
+          botao.classList.remove("visible");
+        }else{
+          botao.classList.add("visible");
+        }
+      });
+    </script>
+
 </html>
