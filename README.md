@@ -1,4 +1,4 @@
 # html
  estudo de html
-<a href="https://pachecopc.github.io/html/exer/01/"
->
+
+Estou aprendo a criar site e agora irei gerenciar meus repositótios!
