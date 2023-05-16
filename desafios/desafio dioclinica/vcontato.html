@@ -9,12 +9,15 @@
     <style>
      label{
             font-size: 20px;
-            padding: 12px 12px 12px 0;
+            padding: 10px 10px 10px 0;
             display:inline-block ;
             
         }
         input{
-            padding: 5px 100px;
+            padding: 5px ;
+            box-sizing: border-box;
+            width: 60%;
+            height: 30px;
             
              }
 
@@ -23,10 +26,19 @@
             }
 
             .cont{
-                 transform: translate(0, -120px);
+                 transform: translate(0, -240px);
             }
             .q1{
-                transform: translate(0, -200px);
+                transform: translate(0, -250px);
+            }
+
+            #p1{
+                width: 95%;
+                
+            }
+            
+            .q1 img{
+                width: 20px;
             }
     </style>
 </head>
@@ -51,9 +63,23 @@
             
             <div class="content">
                 <div class="q1">
-                <h1>Nos contate </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil iure nobis quo labore nisi laudantium dolorum aliquid similique voluptate, fugiat hic ab quidem cumque amet ratione deserunt laboriosam itaque.</p>
-            </div>
+                <h2>Nossos contato abaixo </h2>
+                <picture>
+                    <div class="col">  
+                  <p><img src="imagens/fone-png.webp" alt="">(11) 3232- 
+                                  1000</p>
+              </div>
+  
+                <div class="col">
+                  <p><img src="imagens/fone-png.webp" alt="">(11) 91010-1000 (WhatsApp)</p>
+              </div>
+  
+              <div class="col">
+                  <p><img src="imagens/1e-mail.png" alt="">clinica.clinica@clinica.com</p>
+              </div>
+              </picture><hr>
+
+              </div>
                 <div class="cont">
                 <label >Nome:   </label> <input type="text"><br>
                 <label>E-mail: </label> <input type="email">
@@ -63,7 +89,11 @@
                 <label>Mensagem:</label> <input type="text">
                 <br>
                 <button>Enviar</button>
-                <button>Limpar</button>
+                <button>Limpar</button><br><hr>
+
+                <div class="img">
+                    <img id="p1" src="imagens/mapa.png" alt="">   
+                </div>
             </div>
             </div>
             
