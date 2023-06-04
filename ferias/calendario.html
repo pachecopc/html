@@ -22,17 +22,8 @@
         th{
             background-color: burlywood;
             font-size: 20px;            
-        }
-        caption{
-            font-size: 30px;
-            background-color: aqua;
-            color: black;
-            
-        }
-         th,caption{
-            position:sticky;
-            top: 0;
-        }
+        }                     
+        
         .saida{
             background-color:green;
             color: white;
@@ -43,12 +34,17 @@
         }
         img{
            border-radius : 30%;
+           width: 25%;
+           height: 90%;
         }
         .container{
-            display: flex;
-            align-items: center;
-            font-size: 70px;     
-            margin: 100px;    
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;   
+            height: 30%;         
+            background-color: aqua;
+            color: black;    
              
         }
         .container p{
@@ -59,17 +55,49 @@
             background-color: rgb(234, 221, 205);
         }
 
+        .q1{
+            margin-left: 390px;
+            margin-top: -120px;
+        }
+            
+        
+        
+
+        .q2{
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            margin-left: 390px;   
+            background-color: aqua;
+            color: blue; 
+            width:  80%;
+            
+
+        }
+        .q3, .q4{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 25px;
+        }
+
+
     </style>
     
 </head>
 <body>
-    <div class="container">
-    <img src="casal.JPG" alt="Casal" width="300" height="300">
-<p>FÉRIAS 2023.<br> Destinos: João Pessoa, Pipa e Natal</p>
-</div>
+    
+    <img src="eu-ela.JPG" alt="Casal" width="300" height="300">
+
+
     <p><a href="ferias.html">Voltar para Inicio</a></p>
-    <table style="width: 80%;" >        
-            <caption>Calendário De Férias 2023</caption>
+<header>
+    <div class="q2">
+        <caption class="q4">Calendário De Férias 2023</caption>
+        <p class="q3"> Destinos: João Pessoa, Pipa e Natal</p><br>
+    </div>
+</header>
+    <table class="q1" >        
+            
             <tr>
                 <th>Mês</th>
                 <th>Data</th>
