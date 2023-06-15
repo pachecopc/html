@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Filmes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+
+        table{
+            border-collapse: collapse;
+            border: 5px solid black;
+
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td{
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        .q1{
+            border-radius: 2px 2px 0 0 black;
+            background-color: greenyellow;
+        }
+        .m1{
+            border-bottom: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relação de Filme</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        
+        <thead>                      
+            <tr class="q1">
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <div >
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Alice no Pais da Maravilha</td>
+                <td>Doce Vingança</td>               
+            </tr>
+
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Medo</td>
+                <td>Ferias com todas</td>
+
+            </tr>
+            <tr class="m1">
+                <td>Cláudia Melo</td>
+                <td>Matrix</td>
+                <td>Resgate</td>
+                <td>Uma Linda Mulher</td>                
+            </tr>
+        </div>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocavel</td>
+                 <td>Amnésia</td>
+                 <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>O Resgate</td>
+                <td>Desafiando Gigantes</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars</td>
+            <td>A Mumia</td>
+            <td>Homem de Ferro</td>
+            </tr>
+        </tbody>
+       </div>
+    </table>
+   
+</body>
+</html>
