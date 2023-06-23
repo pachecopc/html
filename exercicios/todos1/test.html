@@ -5,8 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #elemento-pai{
+           border: 1px solid rgb(224, 19, 19);
+           width: 45%;
+           height: 580px;
+           text-align: center;
+           padding: 10px;
+            margin-left: 150px;
+        }
+        #elemento-irmao{
+           border: 1px solid rgb(224, 19, 19);
+           width: 45%;
+           height: 580px;
+           text-align: center;
+           padding: 10px;
+            margin-left: 150px;
+            margin: 20px;
+        }
+
+
+        header{
+           border: 1px solid black;
+           width: 95%;
+           margin-left: 10px;
+           height: 30px;
+        }
+        section{
+            border: 1px solid blue;
+            background-color: rgba(150, 247, 234, 0.575);
+            width: 90%;
+            height: 420px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .d1, .d2 {
+            background-color: antiquewhite;
+            width: 90%;
+            height: 160px;
+            margin-left: 20px;
+        }
+
+        .d1{
+            border: 1px solid black;
+           
+        }
+        .d2{
+              border: 1px solid black;
+              margin-top: 20px;
+        }              
+                   
+        
+        footer{
+           border: 1px solid black;
+           background-color: darkgray;
+           width: 95%;
+           margin-left: 10px;
+           margin-top: 20px;
+            height: 30px;
+        }
+        .q1{
+            display: inline-block;
+            border: 1px solid black;
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            margin-top: -15px;
+            
+        }
+        .p1{
+            transform: translate(0 , -70%);
+        }
+        #elemento1{
+            background-color: pink;
+            
+        }                      
+        #elemento2{
+            background-color: blue;            
+        }
+        #elemento3{
+            background-color: blueviolet;            
+        }
+        #elemento4{
+            background-color: yellowgreen;            
+            
+        }
+        #elemento5{
+            background-color: red;   
+            
+        }
+        #elemento6{
+            background-color: aquamarine;            
+           
+        }
+        
+        .eu01{
+           transform: translate(0 , 70%);
+        }
+
+        .coluna-d{
+         float: left;
+         width: 75%;
+        }
+          .coluna-e{
+            float: left;
+            width: 25%;
+        }
+      
+            
+        
+        
+    </style>
 </head>
 <body>
-    
+    <p>Eu sou o corpo</p>
+    <div id="elemento-pai" class="coluna-d">
+    <header> Eu sou a cabeça </header>
+    <section>
+        <p>EU sou uma Seção</p>
+        <div class="d1"><p class="p1">Eu sou repartição1</p>
+            <div id="elemento1" class="q1"><p class="eu01">EU 01</p></div>
+            <div id="elemento2" class="q1"><p class="eu01">EU 02</p></div>
+            <div id="elemento3" class="q1"><p class="eu01">EU 03</p></div>
+        </div>
+        <div class="d2"><p class="p1">Eu sou repartição2</p>
+            <div id="elemento4" class="q1"><span>EU 04</span></div>
+            <div id="elemento5"  class="q1"><span>EU 05</span></div>
+            <div id="elemento6" class="q1"><span>EU 06</span></div>
+        </div>
+    </section>
+    <footer>Eu sou o rodapé</footer>
+    </div>
+
+    <div id="elemento-irmao" class="coluna-e">
+        <header> Eu sou a cabeça </header>
+        <section>
+            <p>EU sou uma Seção</p>
+            <div class="d1"><p class="p1">Eu sou repartição1</p>
+                <div id="elemento1" class="q1"><p class="eu01">EU 01</p></div>
+                <div id="elemento2" class="q1"><p class="eu01">EU 02</p></div>
+                <div id="elemento3" class="q1"><p class="eu01">EU 03</p></div>
+            </div>
+            <div class="d2"><p class="p1">Eu sou repartição2</p>
+                <div id="elemento4" class="q1"><span>EU 04</span></div>
+                <div id="elemento5"  class="q1"><span>EU 05</span></div>
+                <div id="elemento6" class="q1"><span>EU 06</span></div>
+            </div>
+        </section>
+        <footer>Eu sou o rodapé</footer>
+        </div>
+
+        <script>
+          var a = window.document.getElementById("elemento1")
+          a.addEventListener('click' , clicar)
+          a.addEventListener('mouseout', sair)
+          function clicar(){
+            a.style.background = 'red'
+            a.style.color = 'white'
+          }
+          function sair(){
+            a.style.background = 'aquamarine'
+            a.style.color = 'black'
+          }
+
+
+        </script>
 </body>
 </html>
