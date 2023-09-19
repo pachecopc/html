@@ -5,17 +5,6 @@ main {
   background-size: cover;
 }
 
-#mundo {
-  display: flex;
-  flex-wrap: wrap ;
-  border-radius: 8px;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12)0%, rgba(255, 255, 255, 0) 100%);
-}
-
 /* Header */
 .header {
   position: relative;
@@ -79,6 +68,7 @@ main {
 /* Divider */
 
 .divider {
+  
   width: 70%;
   max-width: 700px;
   height: 5px;
@@ -86,6 +76,8 @@ main {
 }
 
 .offer {
+  
+   
   text-align: center;
   font-size: 1.25rem;
 }

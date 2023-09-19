@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE GRID 01</title>
+    <style>
+     .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 24px;
+        text-align: center;
+     }
+
+     .contents {
+        margin: 100px auto;
+     }
+
+     .contents__container{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+     }
+     .contents__card {
+        border-radius: 16px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid transparent;
+        transition: transform 0.8s, backgrund 0.8s, border 1s;
+     }
+
+     .contents__card:hover {
+        transform: scale(1.05);
+        border: 2px solid var(--tertary-color);
+     }
+      
+     .contents__card:hover .contents__images {
+        opacity: 0;
+     }
+
+     
+     .contents__images {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: opacity 2s;
+     }
+
+     /* HBO Content */
+     .contents__card:nth-child(1):hover {
+        background-image: url("../imagem/hbo-hover_0.webp");
+     }
+
+     .contents__card:nth-child(2):hover {
+        background-image: url("../imagem/MAX-Hover.webp");
+     }
+     .contents__card:nth-child(3):hover {
+        background-image: url("../imagem/DC-Hover.webp");
+     }
+     .contents__card:nth-child(4):hover {
+        background-image: url("../imagem/WB-Hover.webp");
+     }
+     .contents__card:nth-child(5):hover {
+        background-image: url("../imagem/CN-Hover.png");
+     }
+     .contents__card:nth-child(6):hover {
+        background-image: url("../imagem/UCL-Hover.webp");
+     }
+
+     
+    
+
+
+
+    </style>
+</head>
+<body>
+    <section id="contents" class="contents container">
+        <h2 class="title">Descubra novo universos</h2>
+        <div class="contents__container">
+
+        <div class="contents__card">
+            <img class="contents__images" src="imagem/hbo-default_0.webp" alt="">
+        </div>
+
+        <div class="contents__card">
+            <img class="contents__images" src="imagem/MAX-Default.webp" alt="">
+        </div>
+
+        <div class="contents__card">
+            <img class="contents__images" src="imagem/DC_Default.webp" alt="">
+        </div>
+
+        <div class="contents__card">
+            <img class="contents__images" src="imagem/WB-Default.webp" alt="">
+        </div>
+
+        <div class="contents__card">
+            <img class="contents__images" src="imagem/CN-Default.webp" alt="">
+        </div>
+        <div class="contents__card">
+            <img class="contents__images" src="imagem/UCL-Default.webp" alt="">
+        </div>
+    </div>
+    </section>
+    
+</body>
+</html>
