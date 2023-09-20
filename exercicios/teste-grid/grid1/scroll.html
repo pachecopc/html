@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ box-sizing: border-box;}
+
+
+        .slideshow-container{
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+            
+        }
+
+        
+
+   .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(177, 8, 8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.0); 
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #757575;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fc0808;
+}
+
+
+  .contents__images {
+        width: 420px;        
+         }
+
+        .fade{
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade{
+            from {opacity: .6}
+            to {opacity: 1}
+        }
+      
+
+         
+    </style>
+</head>
+<body>
+    
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            
+          <img class="contents__images"  src="imagem/hbo-default_0.webp" alt="">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="contents__images" src="imagem/MAX-Default.webp" alt="">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="contents__images" src="imagem/DC_Default.webp" alt="">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="contents__images" src="imagem/WB-Default.webp" alt="">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="contents__images" src="imagem/CN-Default.webp" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img class="contents__images" src="imagem/UCL-Default.webp" alt="">
+        </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+    <script>
+     let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+    </script>
+    
+    
+    
+</body>
+</html>
