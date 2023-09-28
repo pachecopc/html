@@ -97,6 +97,63 @@ main {
   font-size: 2rem;
   font-weight: 500;
 }
+ /*segunda sessão*/
+ #shroom-module{
+  position: relative;
+  margin: 2.5rem 0;
+}
+
+#shroom-module .shroom-container {
+overflow: hidden;
+}
+
+#shroom-module h3 {
+font-weight: 400;  
+font-size: 20px;
+line-height: 24px;
+color: #ffffff;
+letter-spacing: 0.15rem;
+margin-bottom: 0.75rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#shoroom-module .shroom-card {
+  display: inline-block;
+  position: relative;
+  margin-right: 1rem;
+  flex: 0 0 24%;
+  max-width: 24%;
+}
+
+.q3 {
+ display: block;
+ font-size: 1rem;
+  font-weight: 750;
+ 
+
+}
+
+.shoroom-container {
+  display: flex;
+  gap: 20px;
+}
+
+.q1 {
+  width: 180px;
+  height: 250px;
+}
+
+.q2{
+  padding: 2rem;
+ }
+
+#shoroom-module .card-content {
+width: 100%;
+text-align: center;
+text-transform: uppercase;
+}
+
+
 
 /* Subscription Plans */
 
@@ -190,6 +247,11 @@ main {
 }
 
 .contents__card:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--tertiary-color);
+}
+
+.shoroom-card:hover {
   transform: scale(1.05);
   border: 2px solid var(--tertiary-color);
 }
